@@ -297,14 +297,14 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **Extensions**
 
-* 1a. User requests to add a task at a certain date without time. 
+* 1a. User requests to add a task at a certain date without time.
     * 1a1. Uni-Fy adds the task at the given date and time of 23:59 and displays success message
-    
+
       Use case ends.
 * 1b. User enters invalid date format.
   * 1b1. Uni-Fy shows an error message.
-    
-    Use case resumes at step 1. 
+
+    Use case resumes at step 1.
 
 **Use case: Delete a person**
 
@@ -328,10 +328,10 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
     * 3a1. Uni-Fy shows an error message.
 
       Use case resumes at step 2.
-    
+
 * 3b. User requests to delete a specific task based on its task name
   * 3b1. Uni-Fy deletes the specified task
-    
+
     Use case ends.
 
 **Use case: Find a task**
@@ -358,7 +358,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **Extensions**
 
-* 1a. The list is empty. 
+* 1a. The list is empty.
   Use case ends.
 
 * 2a. The given index is invalid.

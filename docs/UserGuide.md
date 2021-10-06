@@ -60,7 +60,7 @@ Format: `help`
 
 Add a task to the task list.
 
-Format: 
+Format:
 - <code> add <i>n/task_name d/date (t/time) </i> </code>
 
 Interpretation
