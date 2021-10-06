@@ -1,1 +1,2 @@
 *.pdf binary
+*.java	text eol=lf
