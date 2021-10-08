@@ -35,7 +35,7 @@ public class PersonCard extends UiPart<Region> {
     @FXML
     private Label phone;
     @FXML
-    private Label Date;
+    private Label date;
     @FXML
     private Label email;
     @FXML
@@ -50,7 +50,7 @@ public class PersonCard extends UiPart<Region> {
         id.setText(displayedIndex + ". ");
         name.setText(person.getName().taskName);
         phone.setText(person.getPhone().value);
-        Date.setText(person.getDate().value);
+        date.setText(person.getDate().value);
         email.setText(person.getEmail().value);
         person.getTags().stream()
                 .sorted(Comparator.comparing(tag -> tag.tagTaskName))
