@@ -9,8 +9,8 @@ import static seedu.unify.commons.util.AppUtil.checkArgument;
  */
 public class Tag {
 
-    public static final String MESSAGE_CONSTRAINTS = "Tags names are cases sensitive and can only be chosen " +
-            "as 'Important' or 'Urgent' or 'Medium or 'Low'";
+    public static final String MESSAGE_CONSTRAINTS = "Tags names are cases sensitive and can only be chosen "
+            + "as 'Important' or 'Urgent' or 'Medium or 'Low'";
 
     public final String tagTaskName;
 
@@ -29,10 +29,12 @@ public class Tag {
      * Returns true if a given string is a valid tag task name.
      */
     public static boolean isValidTagTaskName(String test) {
-        if(test.equals("Important") || test.equals("Urgent") || test.equals("Low") || test.equals("Medium"))
+        if (test.equals("Important") || test.equals("Urgent") || test.equals("Low") || test.equals("Medium")) {
             return true;
-        else
+        }
+        else {
             return false;
+        }
     }
 
     @Override
