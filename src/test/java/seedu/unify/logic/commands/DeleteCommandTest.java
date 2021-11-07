@@ -55,6 +55,15 @@ public class DeleteCommandTest {
     }
 
     @Test
+    public void execute_duplicateIndexUnfilteredList_throwsCommandException() {
+        List<Index> outOfBoundIndexList = new ArrayList<>(
+                Arrays.asList(Index.fromOneBased(model.getFilteredTaskList().size() + 1), Index.fromOneBased(model.getFilteredTaskList().size() + 1)));
+        DeleteCommand deleteCommand = new DeleteCommand(outOfBoundIndexList);
+
+        assertCommandFailure(deleteCommand, model, Messages.MESSAGE_DUPLICATE_INDEX);
+    }
+
+    @Test
     public void execute_validIndexFilteredList_success() {
         showTaskAtIndex(model, INDEX_FIRST_TASK);
 
