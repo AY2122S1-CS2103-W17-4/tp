@@ -30,7 +30,7 @@ public class CommandTestUtil {
     public static final String VALID_TIME_ASSIGNMENT = "16:40";
     public static final String VALID_TIME_QUIZ = "11:35";
     public static final String VALID_DATE_ASSIGNMENT = "2021-12-11";
-    public static final String VALID_DATE_QUIZ = "2021-02-21";
+    public static final String VALID_DATE_QUIZ = "2022-02-21";
     public static final String VALID_TAG_MODULE = "CS1234";
     public static final String VALID_TAG_CCA = "CCA";
     public static final String DUPLICATE_DATE_QUIZ = "2021-12-11";

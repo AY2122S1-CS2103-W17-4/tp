@@ -18,7 +18,7 @@ import java.time.temporal.TemporalAdjusters;
 public class Date {
 
     public static final String MESSAGE_CONSTRAINTS = "Date should only contain numbers in the format of YYYY-MM-DD,\n"
-            + "where YYYY is 2021, "
+            + "where YYYY is from 2021 to 2022, "
             + "MM is from 01 to 12, "
             + "and DD is from 01 to 31\n"
             + "and should be of a valid date.";
@@ -29,7 +29,7 @@ public class Date {
     public static final String DATE_PATTERN = "yyyy-MM-dd";
     public static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat(DATE_PATTERN);
     public static final DateTimeFormatter LOCAL_DATE_FORMAT = DateTimeFormatter.ofPattern(DATE_PATTERN);
-    private static final String YEAR_REGEX = "2021";
+    private static final String YEAR_REGEX = "(202[12])";
     private static final String MONTH_REGEX = "(0[1-9]|1[012])";
     private static final String DAY_REGEX = "(0[1-9]|[12][0-9]|3[01])";
     public static final String VALIDATION_REGEX = YEAR_REGEX + "-" + MONTH_REGEX + "-" + DAY_REGEX;

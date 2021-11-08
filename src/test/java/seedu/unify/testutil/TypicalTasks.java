@@ -40,13 +40,13 @@ public class TypicalTasks {
     public static final Task INTERNSHIP_SEMINAR = new TaskBuilder().withName("Internship Seminar").withTime("13:44")
             .withDate("2021-10-25").build();
     public static final Task CS2101_DEMO_DONE = new TaskBuilder().withName("DEMO").withTime("12:59")
-            .withDate("2021-01-15").withTags("CS2101").withState("DONE").build();
+            .withDate("2022-01-15").withTags("CS2101").withState("DONE").build();
 
     // Manually added
     public static final Task BUY_GROCERIES = new TaskBuilder().withName("Buy Groceries").withTime("11:22")
             .withDate("2021-10-25").build();
     public static final Task CS1234_PRESENTATION = new TaskBuilder().withName("Presentation").withTime("12:59")
-            .withDate("2021-01-15").withTags("CS1234").build();
+            .withDate("2022-01-15").withTags("CS1234").build();
 
     // Manually added - Task's details found in {@code CommandTestUtil}
     public static final Task ASSIGNMENT = new TaskBuilder().withName(VALID_NAME_ASSIGNMENT)

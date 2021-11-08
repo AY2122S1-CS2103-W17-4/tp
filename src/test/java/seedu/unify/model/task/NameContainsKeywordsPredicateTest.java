@@ -69,8 +69,8 @@ public class NameContainsKeywordsPredicateTest {
         assertFalse(predicate.test(new TaskBuilder().withName("English Quiz").build()));
 
         // Keywords match time and date, but does not match name
-        predicate = new NameContainsKeywordsPredicate(Arrays.asList("Assignment", "12:34", "2021-02-27"));
+        predicate = new NameContainsKeywordsPredicate(Arrays.asList("Assignment", "12:34", "2022-02-27"));
         assertFalse(predicate.test(new TaskBuilder().withName("English Quiz").withTime("12:34")
-                .withDate("2021-02-27").build()));
+                .withDate("2022-02-27").build()));
     }
 }

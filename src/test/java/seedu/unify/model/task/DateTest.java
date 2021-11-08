@@ -31,7 +31,6 @@ public class DateTest {
         assertFalse(Date.isValidDate(" ")); // spaces only
         assertFalse(Date.isValidDate("-")); // one character
         assertFalse(Date.isValidDate("2020-10-11")); // not within year range
-        assertFalse(Date.isValidDate("2022-12-11")); // not within year range
         assertFalse(Date.isValidDate("0011-12-11")); // not within year range
         assertFalse(Date.isValidDate("9982-12-11")); // not within year range
         assertFalse(Date.isValidDate("2021-03-1")); // invalid day format
@@ -39,7 +38,7 @@ public class DateTest {
 
         // valid dates
         assertTrue(Date.isValidDate("2021-12-11"));
-        assertTrue(Date.isValidDate("2021-12-11")); // date further from now
+        assertTrue(Date.isValidDate("2022-12-11")); // date further from now
     }
 
     @Test

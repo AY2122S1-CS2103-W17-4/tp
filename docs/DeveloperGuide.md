@@ -14,9 +14,6 @@ This developer guide provides an overview and details of Uni-Fy's system archite
 ### 1.2 Acknowledgements
 
 - Adapted from  AddressBook Level-3 project created as part of the SE-EDU initiative
-- The application logo was generated with Wix Logo Maker. 
-- Our diagrams were mostly generated with PlantUML.
-
 
 ### 1.3 Setting up, getting started
 
